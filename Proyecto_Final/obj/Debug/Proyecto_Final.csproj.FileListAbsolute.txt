@@ -1,0 +1,14 @@
+C:\Users\gerso\Videos\Proyecto_Final\bin\Debug\Proyecto_Final.exe.config
+C:\Users\gerso\Videos\Proyecto_Final\bin\Debug\Proyecto_Final.exe
+C:\Users\gerso\Videos\Proyecto_Final\bin\Debug\Proyecto_Final.pdb
+C:\Users\gerso\Videos\Proyecto_Final\obj\Debug\Proyecto_Final.csprojAssemblyReference.cache
+C:\Users\gerso\Videos\Proyecto_Final\obj\Debug\Proyecto_Final.Properties.Resources.resources
+C:\Users\gerso\Videos\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.GenerateResource.cache
+C:\Users\gerso\Videos\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.CoreCompileInputs.cache
+C:\Users\gerso\Videos\Proyecto_Final\obj\Debug\Proyecto_Final.exe
+C:\Users\gerso\Videos\Proyecto_Final\obj\Debug\Proyecto_Final.pdb
+C:\Users\gerso\Videos\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.frmInicio.resources
+C:\Users\gerso\Videos\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.frmPrincipal.resources
+C:\Users\gerso\Videos\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.Menu.resources
+C:\Users\gerso\Videos\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.Register.resources
+C:\Users\gerso\Videos\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.frmTop10.resources
