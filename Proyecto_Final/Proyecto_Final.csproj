@@ -86,6 +86,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Vista\frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
@@ -114,6 +115,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main Menu %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPlay %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTop10 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPlay %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmInicio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmInicio%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmTop10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Register.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace Proyecto_Final.Vista
 {
@@ -38,6 +39,12 @@ namespace Proyecto_Final.Vista
             tableLayoutPanel1.SetColumnSpan(current, 2);
             tableLayoutPanel1.SetRowSpan(current, 2);
             current.Dock = System.Windows.Forms.DockStyle.Fill;
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            this.Location = new Point(0, 0); //Para que se acople a la pantalla
+            this.Size = new Size(this.Width, Screen.PrimaryScreen.WorkingArea.Size.Height);
         }
     }
 }

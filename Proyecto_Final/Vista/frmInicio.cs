@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace Proyecto_Final.Vista
 {
@@ -28,6 +29,8 @@ namespace Proyecto_Final.Vista
 
         private void frmInicio_Load(object sender, EventArgs e)
         {
+            this.Location = new Point(0, 0); //Para que se acople a la pantalla
+            this.Size = new Size(this.Width, Screen.PrimaryScreen.WorkingArea.Size.Height);
             this.tmrCargado.Start();
 
         }

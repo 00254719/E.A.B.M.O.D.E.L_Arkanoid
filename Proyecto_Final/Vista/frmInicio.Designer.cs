@@ -40,6 +40,7 @@ namespace Proyecto_Final.Vista
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
@@ -47,25 +48,26 @@ namespace Proyecto_Final.Vista
             this.tableLayoutPanel1.Controls.Add(this.pgbCarga, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(869, 545);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(652, 443);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pgbCarga
             // 
+            this.pgbCarga.BackColor = System.Drawing.Color.Black;
             this.pgbCarga.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pgbCarga.Location = new System.Drawing.Point(176, 429);
+            this.pgbCarga.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(169)))), ((int)(((byte)(255)))));
+            this.pgbCarga.Location = new System.Drawing.Point(132, 356);
+            this.pgbCarga.Margin = new System.Windows.Forms.Padding(2);
             this.pgbCarga.Name = "pgbCarga";
-            this.pgbCarga.Size = new System.Drawing.Size(515, 30);
-            this.pgbCarga.TabIndex = 0;
+            this.pgbCarga.Size = new System.Drawing.Size(387, 18);
             this.pgbCarga.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.pgbCarga.ForeColor = Color.HotPink;
-
-
+            this.pgbCarga.TabIndex = 0;
             // 
             // tmrCargado
             // 
@@ -73,11 +75,16 @@ namespace Proyecto_Final.Vista
             // 
             // frmInicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(869, 545);
+            this.BackgroundImage = global::Proyecto_Final.Properties.Resources.frmInicio_1_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(652, 443);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "frmInicio";
             this.Text = "ARKANOID";
