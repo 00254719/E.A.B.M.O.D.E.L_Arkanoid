@@ -17,7 +17,6 @@ namespace Proyecto_Final.Vista
             current = menu1;
             menu1.btnPlay_Click1 += new EventHandler(UserControl1_ButtonClick);
             rg.btnPlay_Click2 += new EventHandler(UserControl2_ButtonClick2);
-
         }
 
         private void UserControl1_ButtonClick(object sender, EventArgs e)
@@ -46,5 +45,6 @@ namespace Proyecto_Final.Vista
             this.Location = new Point(0, 0); //Para que se acople a la pantalla
             this.Size = new Size(this.Width, Screen.PrimaryScreen.WorkingArea.Size.Height);
         }
+
     }
 }
