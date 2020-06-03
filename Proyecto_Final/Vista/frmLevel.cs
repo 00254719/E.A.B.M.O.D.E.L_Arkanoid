@@ -12,12 +12,10 @@ namespace Proyecto_Final.Vista
 {
     public partial class frmLevel : Form
     {
-        private int increment;
 
         public frmLevel()
         {
             InitializeComponent();
-            increment = 10;
             WindowState = FormWindowState.Maximized;
             Height = Screen.PrimaryScreen.Bounds.Height;
             Width = Screen.PrimaryScreen.Bounds.Width;
@@ -30,7 +28,7 @@ namespace Proyecto_Final.Vista
             this.Size = new Size(this.Width, Screen.PrimaryScreen.WorkingArea.Size.Height);
         }
         
-        private void frmLeve_MouseMove(object sender, MouseEventArgs e)
+        private void frmLevel_MosueMpve(object sender, MouseEventArgs e)
         {
             picBounceBar.Left = e.X;
         }
