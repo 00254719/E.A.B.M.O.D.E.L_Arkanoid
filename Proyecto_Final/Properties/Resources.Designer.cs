@@ -163,6 +163,16 @@ namespace Proyecto_Final.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kulka {
+            get {
+                object obj = ResourceManager.GetObject("kulka", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Main_Menu__5_ {
             get {
                 object obj = ResourceManager.GetObject("Main Menu (5)", resourceCulture);

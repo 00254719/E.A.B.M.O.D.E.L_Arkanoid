@@ -6,6 +6,7 @@ namespace Proyecto_Final.Vista
 {
     public partial class frmInicio : Form
     {
+
         public frmInicio()
         {
             InitializeComponent();
@@ -20,8 +21,8 @@ namespace Proyecto_Final.Vista
             }
             else
             {
-                tmrCargado.Enabled = false;
                 frmPrincipal Inicio = new frmPrincipal();
+                tmrCargado.Enabled = false;
                 Inicio.Show();
                 this.Hide();
             }
@@ -32,7 +33,6 @@ namespace Proyecto_Final.Vista
             this.Location = new Point(0, 0); //Para que se acople a la pantalla
             this.Size = new Size(this.Width, Screen.PrimaryScreen.WorkingArea.Size.Height);
             this.tmrCargado.Start();
-
         }
     }
 }
