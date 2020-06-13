@@ -34,8 +34,6 @@ C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\D
 C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.frmInicio.resources
 C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.frmPrincipal.resources
 C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.frmTop10.resources
-C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.Menu.resources
-C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.Register.resources
 C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.GenerateResource.cache
 C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.CoreCompileInputs.cache
 C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.exe
@@ -100,3 +98,6 @@ C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Pro
 C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.CopyComplete
 C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.exe
 C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.pdb
+C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.UserLevelOne.resources
+C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.UserMenu.resources
+C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.UserRegister.resources

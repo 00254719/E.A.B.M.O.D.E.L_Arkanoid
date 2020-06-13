@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_Final.Vista
 {
-    partial class Register
+    partial class UserRegister
     {
         /// <summary> 
         /// Variable del diseñador necesaria.

@@ -10,12 +10,18 @@ using System.Windows.Forms;
 
 namespace Proyecto_Final.Vista
 {
-    public partial class Menu : UserControl
+    public partial class UserMenu : UserControl
     {
         public event EventHandler btnPlay_Click1;
-        public Menu()
+        public UserMenu()
         {
             InitializeComponent();
+            Type tp = tableLayoutPanel1.GetType().BaseType;
+            System.Reflection.PropertyInfo pi =
+                tp.GetProperty("DoubleBuffered",
+                System.Reflection.BindingFlags.Instance
+                | System.Reflection.BindingFlags.NonPublic);
+            pi.SetValue(tableLayoutPanel1, true, null);
         }
 
         private void btnPlay_Click(object sender, EventArgs e)

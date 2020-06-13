@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_Final.Vista
 {
-    partial class Menu
+    partial class UserMenu
     {
         /// <summary> 
         /// Variable del diseñador necesaria.

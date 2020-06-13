@@ -9,41 +9,71 @@ namespace Proyecto_Final.Vista
 
         private UserControl current;
         private MainMenu mn = new MainMenu();
-        private Register rg = new Register();
+        private UserRegister rg = new UserRegister();
+        private UserLevelOne lv = new UserLevelOne();
+        
         public frmPrincipal()
         {
             InitializeComponent();
+            Height = ClientSize.Height;
+            Width = ClientSize.Width;
             WindowState = FormWindowState.Maximized;
             current = menu1;
-            menu1.btnPlay_Click1 += new EventHandler(UserControl1_ButtonClick);
-            rg.btnPlay_Click2 += new EventHandler(UserControl2_ButtonClick2);
+
+            // cargar el usercontrol de Register
+            rg.Dock = DockStyle.Fill;
+            rg.Height = Height;
+            rg.Width = Width;
+            Controls.Add(rg);
+            rg.Hide();
+
+            // Cargar el usercontrol de; Menu
+            menu1.Dock = DockStyle.Fill;
+            menu1.Height = Height;
+            menu1.Width = Width;
+            Controls.Add(menu1);
         }
 
+        //metodo para pasar el Usercontrol Register.
         private void UserControl1_ButtonClick(object sender, EventArgs e)
         {
-            tableLayoutPanel1.Controls.Remove(current);
-            tableLayoutPanel1.Controls.Add(rg, 0, 0);
-            current = rg;
-            tableLayoutPanel1.SetColumnSpan(current, 2);
-            tableLayoutPanel1.SetRowSpan(current, 2);
-            current.Dock = System.Windows.Forms.DockStyle.Fill;
-
+            menu1.Hide();
+            rg.Show();
         }
 
-        private void UserControl2_ButtonClick2(object sender, EventArgs e)
+        //metodo para volver al Usecontrol menu1.
+        private void UserControl2_BtnBackMenu(object sender, EventArgs e)
         {
-            tableLayoutPanel1.Controls.Remove(current);
-            tableLayoutPanel1.Controls.Add(menu1, 0, 0);
-            current = menu1;
-            tableLayoutPanel1.SetColumnSpan(current, 2);
-            tableLayoutPanel1.SetRowSpan(current, 2);
-            current.Dock = System.Windows.Forms.DockStyle.Fill;
+            rg.Hide();
+            menu1.Show();
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(0, 0); //Para que se acople a la pantalla
-            this.Size = new Size(this.Width, Screen.PrimaryScreen.WorkingArea.Size.Height);
+            // suscripciones de los metodos para los usercontrols
+            menu1.btnPlay_Click1 += new EventHandler(UserControl1_ButtonClick);
+            rg.btnBack_Click2 += new EventHandler(UserControl2_BtnBackMenu);
+            rg.OnClickButtonPgame += ClickStartGame;
+
+            // Mensaje al terminar o perder el juego.
+            lv.EndGame = () =>
+            {
+                lv = null;
+                lv = new UserLevelOne();
+
+                MessageBox.Show("Has perdido");
+
+            };
+        }
+
+        // para mostrar el usercontrol del juego.
+        private void ClickStartGame(object sender, EventArgs e)
+        {
+            rg.Hide();
+            lv.Dock = DockStyle.Fill;
+            lv.Height = Height;
+            lv.Width = Width;
+            Controls.Add(lv);
         }
 
     }
