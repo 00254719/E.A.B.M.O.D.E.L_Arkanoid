@@ -39,7 +39,7 @@ namespace Proyecto_Final.Vista
 
             // Asignando atributos a la pelota.
             ball = new PictureBox();
-            ball.Width = ball.Height = 40;
+            ball.Width = ball.Height = 30;
             ball.BackgroundImage = Image.FromFile("../../Resources/Ball.png");
             ball.BackgroundImageLayout = ImageLayout.Stretch;
 
@@ -126,7 +126,7 @@ namespace Proyecto_Final.Vista
         // rebote de la pelota
         private void RebounceBall()
         {
-            if (ball.Bottom > Height)
+            if ( ball.Bottom > Height)
             {
                 timer1.Stop();
                 EndGame?.Invoke();
@@ -171,5 +171,18 @@ namespace Proyecto_Final.Vista
             ball.Left += DataGame.dirX;
             ball.Top += DataGame.dirY;
         }
+
+        //Optimizacion a la hora de dibujar los UserControl
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;  // Turn on WS_EX_COMPOSITED
+                return cp;
+            }
+        }
+
+
     }
 }

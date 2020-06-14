@@ -38,12 +38,13 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 25;
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // picPlayerBar
             // 
-            this.picPlayerBar.Location = new System.Drawing.Point(378, 517);
+            this.picPlayerBar.Location = new System.Drawing.Point(403, 546);
             this.picPlayerBar.Name = "picPlayerBar";
-            this.picPlayerBar.Size = new System.Drawing.Size(306, 66);
+            this.picPlayerBar.Size = new System.Drawing.Size(281, 37);
             this.picPlayerBar.TabIndex = 0;
             this.picPlayerBar.TabStop = false;
             // 
