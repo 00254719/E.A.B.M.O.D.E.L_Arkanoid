@@ -124,7 +124,7 @@
             this.btnPgame.Size = new System.Drawing.Size(327, 105);
             this.btnPgame.TabIndex = 3;
             this.btnPgame.UseVisualStyleBackColor = false;
-            this.btnPgame.Click += new System.EventHandler(this.button2_Click);
+            this.btnPgame.Click += new System.EventHandler(this.btnPgame_Click);
             // 
             // label1
             // 

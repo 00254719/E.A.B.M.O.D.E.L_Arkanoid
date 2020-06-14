@@ -8,13 +8,13 @@ namespace Proyecto_Final.Modelo
 {
     public class Player
     {
-        public string nickname { get; set; }
-        public int score { get; set; }
+        public string Nickname { get; set; }
+        public int Score { get; set; }
 
         public Player(string nickname = "", int score = 0)
         {
-            this.nickname = nickname;
-            this.score = score;
+            this.Nickname = nickname;
+            this.Score = score;
         }
     }
 }

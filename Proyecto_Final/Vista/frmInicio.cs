@@ -11,12 +11,7 @@ namespace Proyecto_Final.Vista
         public frmInicio()
         {
             InitializeComponent();
-            Type tp = tableLayoutPanel1.GetType().BaseType;
-            System.Reflection.PropertyInfo pi =
-                tp.GetProperty("DoubleBuffered",
-                System.Reflection.BindingFlags.Instance
-                | System.Reflection.BindingFlags.NonPublic);
-            pi.SetValue(tableLayoutPanel1, true, null);
+            OptimizeTableLayoutPanel();
 
             Height = ClientSize.Height;
             Width = ClientSize.Width;
@@ -29,8 +24,11 @@ namespace Proyecto_Final.Vista
             Controls.Add(Ulevel);
 
             Ulevel.Show();
+
+            this.tmrCargado.Start();
         }
 
+        // Metodo de la Barra de carga
         private void tmrCargado_Tick(object sender, EventArgs e)
         {
             this.pgbCarga.Increment(1);
@@ -47,11 +45,15 @@ namespace Proyecto_Final.Vista
             }
         }
 
-        private void frmInicio_Load(object sender, EventArgs e)
+        //metodo para cargar el contenido de las tablelayoutpanel sin tanto delay y de forma mas optima.
+        private void OptimizeTableLayoutPanel()
         {
-            this.Location = new Point(0, 0); //Para que se acople a la pantalla
-            this.Size = new Size(this.Width, Screen.PrimaryScreen.WorkingArea.Size.Height);
-            this.tmrCargado.Start();
+            Type tp = tableLayoutPanel1.GetType().BaseType;
+            System.Reflection.PropertyInfo pi =
+                tp.GetProperty("DoubleBuffered",
+                System.Reflection.BindingFlags.Instance
+                | System.Reflection.BindingFlags.NonPublic);
+            pi.SetValue(tableLayoutPanel1, true, null);
         }
     }
 }

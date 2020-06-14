@@ -89,7 +89,6 @@ namespace Proyecto_Final.Vista
             this.Name = "frmInicio";
             this.Text = "ARKANOID";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frmInicio_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

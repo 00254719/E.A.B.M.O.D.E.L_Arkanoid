@@ -30,14 +30,14 @@ namespace Proyecto_Final.Vista
         // Metodos que coinciden con el delegate de Event
         private void UserLevelOne_Load(object sender, EventArgs e)
         {
-            // Seteando los atributos para picBox jugador
+            // Asignando atributos a la barra del jugador
             picPlayerBar.BackgroundImage = Image.FromFile("../../Resources/Bar.png");
             picPlayerBar.BackgroundImageLayout = ImageLayout.Stretch;
 
             picPlayerBar.Top = Height - picPlayerBar.Height - 80;
             picPlayerBar.Left = (Width / 2) - (picPlayerBar.Width / 2);
 
-            // Seteando los atributos para picBox pelota
+            // Asignando atributos a la pelota.
             ball = new PictureBox();
             ball.Width = ball.Height = 40;
             ball.BackgroundImage = Image.FromFile("../../Resources/Ball.png");
@@ -48,11 +48,12 @@ namespace Proyecto_Final.Vista
 
             Controls.Add(ball);
 
-            LoadTiles();
+            LoadBlocks();
             timer1.Start();
         }
 
-        private void LoadTiles()
+        // Metodo para Cargar los bloques.
+        private void LoadBlocks()
         {
             int xAxis = 10, yAxis = 5;
 
@@ -88,12 +89,8 @@ namespace Proyecto_Final.Vista
                 }
             }
         }
-
-        private int GRN()
-        {
-            return new Random().Next(1, 8);
-        }
-
+       
+        // Seguimiento de la barra al movimiento del mouse
         private void UserLevelOne_MouseMove(object sender, MouseEventArgs e)
         {
             if (!DataGame.GameStart)
@@ -119,12 +116,14 @@ namespace Proyecto_Final.Vista
             MoveBall?.Invoke();
         }
 
+        // para que la pelota inicie a moverse
         private void UserLevelOne_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Space)
                 DataGame.GameStart = true;
         }
 
+        // rebote de la pelota
         private void RebounceBall()
         {
             if (ball.Bottom > Height)
@@ -166,148 +165,11 @@ namespace Proyecto_Final.Vista
             }
         }
 
+        // Movimiento de la pelota
         private void Start_Move_Ball()
         {
             ball.Left += DataGame.dirX;
             ball.Top += DataGame.dirY;
         }
-
-        /*
-        private void UserLevelOne_Load(object sender, EventArgs e)
-        {
-            picPlayerBar.BackgroundImage = Image.FromFile("../../Resources/Bar.png");
-            picPlayerBar.BackgroundImageLayout = ImageLayout.Stretch;
-
-            picPlayerBar.Top = Height - picPlayerBar.Height - 80;
-            picPlayerBar.Left = (Width / 2) - (picPlayerBar.Width / 2);
-
-            ball = new PictureBox();
-            ball.Width = ball.Height = 40;
-            ball.BackgroundImage = Image.FromFile("../../Resources/Ball.png");
-            ball.BackgroundImageLayout = ImageLayout.Stretch;
-
-            ball.Top = picPlayerBar.Top - ball.Height;
-            ball.Left = picPlayerBar.Left + (picPlayerBar.Width / 2) - (ball.Width / 2);
-
-            Controls.Add(ball);
-
-            LoadTiles();
-            timer1.Start();
-        }
-        private void LoadTiles()
-        {
-            int xAxis = 10;
-            int yAxis = 5;
-
-            int pbHeight = (int)(Height * 0.3) / yAxis;
-            int pbWidth = (Width - (xAxis - 5)) / xAxis;
-
-            cpb = new CustomPictureBox[yAxis, xAxis];
-
-            for (int i = 0; i < yAxis; i++)
-            {
-                for (int j = 0; j < xAxis; j++)
-                {
-                    cpb[i, j] = new CustomPictureBox();
-
-                    if (i == 0)
-                        cpb[i, j].Hits = 2;
-                    else
-                        cpb[i, j].Hits = 1;
-
-                    cpb[i, j].Height = pbHeight;
-                    cpb[i, j].Width = pbWidth;
-
-                    // Posicion de left, y posicion de top
-                    cpb[i, j].Left = j * pbWidth;
-                    cpb[i, j].Top = i * pbHeight;
-
-                    // Si el valor de i = 0, entonces colocar ruta de imagen de bloque blindado
-                    cpb[i, j].BackgroundImage = Image.FromFile("../../Resources/block.jpg");
-                    cpb[i, j].BackgroundImageLayout = ImageLayout.Stretch;
-
-                    cpb[i, j].Tag = "tileTag";
-
-                    Controls.Add(cpb[i, j]);
-                }
-            }
-        }
-        //esto es para poner las imagenes de los bloques al azar 
-        //por el momento solo estamos poniendo de un bloque para ir probando
-        private int GRN()
-        {
-            return new Random().Next(1, 8);
-        }
-        
-
-        private void UserLevelOne_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (!DataGame.GameStart)
-            {
-                if (e.X < (Width - picPlayerBar.Width))
-                {
-                    picPlayerBar.Left = e.X;
-                    ball.Left = picPlayerBar.Left + (picPlayerBar.Width / 2) - (ball.Width / 2);
-                }
-            }
-            else
-            {
-                if (e.X < (Width - picPlayerBar.Width))
-                    picPlayerBar.Left = e.X;
-            }
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (!DataGame.GameStart)
-                return;
-
-            ball.Left += DataGame.dirX;
-            ball.Top += DataGame.dirY;
-
-            rebotarPelota();
-        }
-
-        private void UserLevelOne_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Space)
-                DataGame.GameStart = true;
-        }
-
-        private void rebotarPelota()
-        {
-            if (ball.Bottom > Height)
-                Application.Exit();
-
-            if (ball.Left < 0 || ball.Right > Width)
-            {
-                DataGame.dirX = -DataGame.dirX;
-                return;
-            }
-
-            if (ball.Bounds.IntersectsWith(picPlayerBar.Bounds))
-            {
-                DataGame.dirY = -DataGame.dirY;
-            }
-
-
-            for (int i = 4; i >= 0; i--)
-            {
-                for (int j = 0; j < 10; j++)
-                {
-                    if (ball.Bounds.IntersectsWith(cpb[i, j].Bounds))
-                    {
-                        cpb[i, j].Hits--;
-
-                        if (cpb[i, j].Hits == 0)
-                            Controls.Remove(cpb[i, j]);
-
-                        DataGame.dirY = -DataGame.dirY;
-
-                        return;
-                    }
-                }
-            }
-        }*/
     }
 }

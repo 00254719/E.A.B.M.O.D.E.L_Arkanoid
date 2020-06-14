@@ -79,6 +79,7 @@
   <ItemGroup>
     <Compile Include="Controlador\ConnectionDB.cs" />
     <Compile Include="Controlador\DataGame.cs" />
+    <Compile Include="Controlador\Player_DAO.cs" />
     <Compile Include="Modelo\CustomPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>

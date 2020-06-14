@@ -38,7 +38,6 @@ C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\D
 C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.CoreCompileInputs.cache
 C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.exe
 C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.pdb
-C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.frmLevel.resources
 C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Npgsql.dll
 C:\Users\arman\OneDrive\Escritorio\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Buffers.dll
