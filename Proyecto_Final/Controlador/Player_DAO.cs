@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Windows.Forms;
 
 namespace Proyecto_Final.Controlador
 {
@@ -17,7 +16,7 @@ namespace Proyecto_Final.Controlador
 
             return idplayer;
         }
-       
+
         // Ingresar un nuevo jugador
         public static bool CreatePlayer(string nickname)
         {

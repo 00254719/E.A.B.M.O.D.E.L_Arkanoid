@@ -41,22 +41,24 @@
             // 
             // picPlayerBar
             // 
-            this.picPlayerBar.Location = new System.Drawing.Point(403, 556);
+            this.picPlayerBar.Location = new System.Drawing.Point(302, 452);
+            this.picPlayerBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picPlayerBar.Name = "picPlayerBar";
-            this.picPlayerBar.Size = new System.Drawing.Size(280, 30);
+            this.picPlayerBar.Size = new System.Drawing.Size(210, 33);
             this.picPlayerBar.TabIndex = 0;
             this.picPlayerBar.TabStop = false;
             // 
             // UserLevelOne
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImage = global::Proyecto_Final.Properties.Resources.LvlBG;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.picPlayerBar);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserLevelOne";
-            this.Size = new System.Drawing.Size(1063, 610);
+            this.Size = new System.Drawing.Size(797, 496);
             this.Load += new System.EventHandler(this.UserLevelOne_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserLevelOne_KeyDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.UserLevelOne_MouseMove);

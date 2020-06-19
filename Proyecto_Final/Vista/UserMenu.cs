@@ -21,7 +21,7 @@ namespace Proyecto_Final.Vista
             simpleSound.Play();
             if (this.btnPlay_Click1 != null)
                 this.btnPlay_Click1(sender: this, e);
-            
+
         }
 
         // Evento del boton para mostrar el Top10

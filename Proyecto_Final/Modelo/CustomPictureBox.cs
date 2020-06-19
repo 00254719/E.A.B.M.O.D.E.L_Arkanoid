@@ -2,7 +2,7 @@
 
 namespace Proyecto_Final.Modelo
 {
-    public class CustomPictureBox : PictureBox 
+    public class CustomPictureBox : PictureBox
     {
         public int Hits { get; set; }
 

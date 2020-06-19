@@ -21,7 +21,7 @@ namespace Proyecto_Final.Vista
 
             OptimizeTableLayoutPanel();
         }
-        
+
         // Evento del boton para volver al menu
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -38,14 +38,14 @@ namespace Proyecto_Final.Vista
             simpleSound.Play();
             if (OnClickButtonPgame != null)
             {
-               OnClickButtonPgame(this, e);
+                OnClickButtonPgame(this, e);
             }
             try
             {
                 switch (richTextBox1.Text)
                 {
                     case string aux when aux.Length > 15:
-                        throw new ExceededMaxCharactersException("No se puede introducir un nick de mas de 15 car");
+                        throw new ExceededMaxCharactersException("No se puede introducir un nick de mas de 15 caracteres");
                     case string aux when aux.Trim().Length == 0:
                         throw new EmptyNicknameException("No puede dejar campos vacios");
                     default:

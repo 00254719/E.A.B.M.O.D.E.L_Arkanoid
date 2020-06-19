@@ -1,8 +1,7 @@
-﻿using System;
-using System.Windows.Forms;
-using System.Drawing;
-using Proyecto_Final.Controlador;
+﻿using Proyecto_Final.Controlador;
 using Proyecto_Final.Modelo;
+using System;
+using System.Windows.Forms;
 
 namespace Proyecto_Final.Vista
 {
@@ -68,11 +67,10 @@ namespace Proyecto_Final.Vista
 
             // seteo de propiedades para el UserLevelOne
             lv = new UserLevelOne();
-            rg.Hide();
+
             lv.Dock = DockStyle.Fill;
             lv.Height = Height;
             lv.Width = Width;
-            Controls.Add(lv);
 
             // Mensaje al perder el juego.
             lv.EndGame = () =>
@@ -97,7 +95,7 @@ namespace Proyecto_Final.Vista
                 {
                     MessageBox.Show(ex.Message);
                 }
-                
+
                 MessageBox.Show("Has ganado!");
 
                 Controls.Remove(lv);
@@ -115,6 +113,9 @@ namespace Proyecto_Final.Vista
                 {
                     MessageBox.Show($"Gracias por registrarte {nick}");
                 }
+
+                rg.Hide();
+                Controls.Add(lv);
 
                 currentPlayer = new Player(nick, 0);
 

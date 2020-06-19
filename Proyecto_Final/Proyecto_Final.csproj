@@ -81,7 +81,10 @@
     <Compile Include="Controlador\DataGame.cs" />
     <Compile Include="Controlador\EmptyNicknameException.cs" />
     <Compile Include="Controlador\ExceededMaxCharactersException.cs" />
+    <Compile Include="Controlador\NoRemainingLifesException.cs" />
+    <Compile Include="Controlador\OutOfBoundsException.cs" />
     <Compile Include="Controlador\Player_DAO.cs" />
+    <Compile Include="Controlador\WrongKeyPressedException.cs" />
     <Compile Include="Modelo\CustomPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>

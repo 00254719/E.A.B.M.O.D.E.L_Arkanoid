@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Arkanoid.Controlador;
+using Proyecto_Final.Controlador;
+using Proyecto_Final.Modelo;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
-using Proyecto_Final.Modelo;
-using Proyecto_Final.Controlador;
 
 namespace Proyecto_Final.Vista
 {
@@ -10,7 +11,7 @@ namespace Proyecto_Final.Vista
     {
         private Panel Scores;
         private Label RemanentLife, Points;
-        private CustomPictureBox [,] cpb;
+        private CustomPictureBox[,] cpb;
         private PictureBox ball;
 
         private int remainingBlocks = 0;
@@ -25,6 +26,8 @@ namespace Proyecto_Final.Vista
         public UserLevelOne()
         {
             InitializeComponent();
+
+            DoubleBuffered = true;
 
             MoveBall = RebounceBall;
             MoveBall += Start_Move_Ball;
@@ -119,7 +122,7 @@ namespace Proyecto_Final.Vista
                 }
             }
         }
-       
+
         // Seguimiento de la barra al movimiento del mouse
         private void UserLevelOne_MouseMove(object sender, MouseEventArgs e)
         {
@@ -143,16 +146,55 @@ namespace Proyecto_Final.Vista
             if (!DataGame.GameStart)
                 return;
 
-            MoveBall?.Invoke();
+            try
+            {
+                MoveBall?.Invoke();
+            }
+            catch (OutOfBoundsException ex)
+            {
+                try
+                {
+                    DataGame.lifes--;
+                    DataGame.GameStart = false;
+                    timer1.Stop();
+
+                    ReloadElements();
+                    UpdateElements();
+
+                    if (DataGame.lifes == 0)
+                    {
+                        throw new NoRemainingLifesException("");
+                    }
+                }
+                catch (NoRemainingLifesException ex2)
+                {
+                    timer1.Stop();
+                    FinishGame?.Invoke();
+                }
+            }
         }
 
         // para que la pelota inicie a moverse
         private void UserLevelOne_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Space)
+            try
             {
-                DataGame.GameStart = true;
-                timer1.Start();
+                if (!DataGame.GameStart)
+                {
+                    switch (e.KeyCode)
+                    {
+                        case Keys.Space:
+                            DataGame.GameStart = true;
+                            timer1.Start();
+                            break;
+                        default:
+                            throw new WrongKeyPressedException("Presione la tecla Space para iniciar el juego");
+                    }
+                }
+            }
+            catch (WrongKeyPressedException ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -210,7 +252,7 @@ namespace Proyecto_Final.Vista
                             cpb[i, j].Hits--;
 
                             // cambio de imagen de fondo segun los golpes
-                            if(cpb[i, j].Tag.Equals("blockLevel3"))
+                            if (cpb[i, j].Tag.Equals("blockLevel3"))
                                 cpb[i, j].BackgroundImage = Image.FromFile("../../Resources/Brick_Lvl3_Broken.jpg");
                             else if (cpb[i, j].Tag.Equals("blockLevel2"))
                                 cpb[i, j].BackgroundImage = Image.FromFile("../../Resources/Brick_Lvl2_Broken.jpg");
@@ -236,7 +278,7 @@ namespace Proyecto_Final.Vista
                             timer1.Stop();
                             WinningGame?.Invoke();
                         }
-                            
+
 
                         return;
                     }
@@ -277,7 +319,7 @@ namespace Proyecto_Final.Vista
             Heart.BackgroundImage = Image.FromFile("../../Resources/Heart.png");
             Heart.BackgroundImageLayout = ImageLayout.Stretch;
             #endregion
-                        
+
             // Instanciar labels
             RemanentLife = new Label();
             Points = new Label();
@@ -299,7 +341,7 @@ namespace Proyecto_Final.Vista
             Scores.Controls.Add(Heart);
             Scores.Controls.Add(RemanentLife);
             Scores.Controls.Add(Points);
-                       
+
             Controls.Add(Scores);
         }
 
