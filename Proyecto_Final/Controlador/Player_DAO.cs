@@ -2,61 +2,59 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Proyecto_Final.Controlador
 {
     public static class Player_DAO
     {
-        //Consultar y guardar en una lista todos los jugadores
-        public static List<Player> PlayerList()
+        // Consultar el Id de un jugador
+        public static int QueryIdplayer(string nick)
         {
-            List<Player> PlayersList = new List<Player>();
+            var dt = ConnectionDB.ExecuteQuery($"SELECT idPlayer FROM PLAYER WHERE nickname = '{nick}'");
+            DataRow idaux = dt.Rows[0];
+            int idplayer = Convert.ToInt32(idaux[0].ToString());
 
-            String query = "SELECT NICKNAME, SCORE FROM PLAYER";
-            DataTable dt = ConnectionDB.ExecuteQuery(query);
+            return idplayer;
+        }
+       
+        // Ingresar un nuevo jugador
+        public static bool CreatePlayer(string nickname)
+        {
+            var dt = ConnectionDB.ExecuteQuery($"SELECT * FROM PLAYER WHERE nickname = '{nickname}'");
 
-            foreach (DataRow dr in dt.Rows)
+            if (dt.Rows.Count > 0)
+                return true;
+            else
             {
-                Player p = new Player();
-                p.Nickname = dr[0].ToString();
-                p.Score = Convert.ToInt32(dr[1].ToString());
+                ConnectionDB.ExecuteNonQuery("INSERT INTO PLAYER(nickname) VALUES" +
+                    $"('{nickname}')");
 
-                PlayersList.Add(p);
+                return false;
             }
-
-            return PlayersList;
+        }
+        public static void CreateNewScore(int idPlayer, int score)
+        {
+            ConnectionDB.ExecuteNonQuery("INSERT INTO SCORE(idPlayer, score) VALUES" +
+                $"({idPlayer}, {score})");
         }
 
         //Consultar y guardar en una lista el top 10
-        public static List<Player> Top10PlayerList()
+        public static List<Player> QueryPlayerTop()
         {
-            List<Player> PlayersList = new List<Player>();
-
-            String query = "SELECT * FROM PLAYER ORDER BY SCORE DESC" +
-                " FETCH FIRST 10 ROWS ONLY";
-            DataTable dt = ConnectionDB.ExecuteQuery(query);
+            var topPlayers = new List<Player>();
+            DataTable dt = ConnectionDB.ExecuteQuery("SELECT pl.nickname, sc.score " +
+                                                    "FROM PLAYER pl, SCORE sc " +
+                                                    "WHERE pl.idPlayer = sc.idPlayer " +
+                                                    "ORDER BY sc.score DESC " +
+                                                    "LIMIT 10");
 
             foreach (DataRow dr in dt.Rows)
             {
-                Player p = new Player();
-                p.Nickname = dr[0].ToString();
-                p.Score = Convert.ToInt32(dr[1].ToString());
-
-                PlayersList.Add(p);
+                topPlayers.Add(new Player(dr[0].ToString(), Convert.ToInt32(dr[1])));
             }
 
-            return PlayersList;
+            return topPlayers;
         }
-
-        // Ingresar un nuevo jugador
-        public static void AddPlayer(string nick)
-        {
-            String cmd = String.Format("INSERT INTO public.player(nickname, score)" +
-                  "	VALUES('{0}', 0); ", nick);
-            ConnectionDB.ExecuteNonQuery(cmd);
-        }        
     }
 }

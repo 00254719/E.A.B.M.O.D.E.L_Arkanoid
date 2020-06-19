@@ -174,3 +174,77 @@ C:\Users\gerso\Videos\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug
 C:\Users\gerso\Videos\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.CopyComplete
 C:\Users\gerso\Videos\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.exe
 C:\Users\gerso\Videos\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.pdb
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Proyecto_Final.exe.config
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Proyecto_Final.exe
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Proyecto_Final.pdb
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Npgsql.dll
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Buffers.dll
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Memory.dll
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Text.Json.dll
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.ValueTuple.dll
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Npgsql.pdb
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Npgsql.xml
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Buffers.xml
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Memory.xml
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Text.Json.xml
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.ValueTuple.xml
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.csprojAssemblyReference.cache
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Properties.Resources.resources
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.frmInicio.resources
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.frmPrincipal.resources
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.frmTop10.resources
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.UserMenu.resources
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.UserRegister.resources
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.UserLevelOne.resources
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.GenerateResource.cache
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.CoreCompileInputs.cache
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.CopyComplete
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.exe
+C:\Users\arman\OneDrive\Escritorio\PROYECTO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.pdb
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Proyecto_Final.exe.config
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Proyecto_Final.exe
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Proyecto_Final.pdb
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Npgsql.dll
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Buffers.dll
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Memory.dll
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Text.Json.dll
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.ValueTuple.dll
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Npgsql.pdb
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Npgsql.xml
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Buffers.xml
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Memory.xml
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Text.Json.xml
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\System.ValueTuple.xml
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.csprojAssemblyReference.cache
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Properties.Resources.resources
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.frmInicio.resources
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.frmPrincipal.resources
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.frmTop10.resources
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.UserMenu.resources
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.UserRegister.resources
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.UserLevelOne.resources
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.GenerateResource.cache
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.CoreCompileInputs.cache
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.CopyComplete
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.exe
+C:\Users\majub\Desktop\PROYECTO este si weee na mas consume mucha ram xd\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.pdb

@@ -11,9 +11,9 @@ namespace Proyecto_Final.Controlador
     public static class ConnectionDB
     {
         private static string host = "127.0.0.1",
-            database = "ArkaoidDB",
+            database = "ProyectoFinal_ArkanoidDB",
             userId = "postgres",
-            password = "uca";
+            password = "167024839Naed.";
 
         private static string sConnection =
             $"Host={host};Port=5432;User Id={userId};Password={password};Database={database};";

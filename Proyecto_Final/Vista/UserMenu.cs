@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Media;
 using System.Windows.Forms;
 
 namespace Proyecto_Final.Vista
@@ -22,13 +16,19 @@ namespace Proyecto_Final.Vista
         // Evento del boton Play, este lleva a Registrar al jugador antes de jugar
         private void btnPlay_Click(object sender, EventArgs e)
         {
+
+            SoundPlayer simpleSound = new SoundPlayer("../../Resources/SonidoBoton.wav");
+            simpleSound.Play();
             if (this.btnPlay_Click1 != null)
                 this.btnPlay_Click1(sender: this, e);
+            
         }
 
         // Evento del boton para mostrar el Top10
         private void btnTop10_Click(object sender, EventArgs e)
         {
+            SoundPlayer simpleSound = new SoundPlayer("../../Resources/SonidoBoton.wav");
+            simpleSound.Play();
             frmTop10 Top = new frmTop10();
             Top.Show();
         }
@@ -36,6 +36,8 @@ namespace Proyecto_Final.Vista
         // Evento del boton Exit
         private void btnExit_Click(object sender, EventArgs e)
         {
+            SoundPlayer simpleSound = new SoundPlayer("../../Resources/SonidoBoton.wav");
+            simpleSound.Play();
             Application.Exit();
         }
 

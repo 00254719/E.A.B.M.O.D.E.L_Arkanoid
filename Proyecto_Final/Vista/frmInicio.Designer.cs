@@ -31,6 +31,7 @@ namespace Proyecto_Final.Vista
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pgbCarga = new System.Windows.Forms.ProgressBar();
             this.tmrCargado = new System.Windows.Forms.Timer(this.components);
@@ -66,7 +67,6 @@ namespace Proyecto_Final.Vista
             this.pgbCarga.Margin = new System.Windows.Forms.Padding(2);
             this.pgbCarga.Name = "pgbCarga";
             this.pgbCarga.Size = new System.Drawing.Size(387, 18);
-            this.pgbCarga.Style = System.Windows.Forms.ProgressBarStyle.Blocks;
             this.pgbCarga.TabIndex = 0;
             // 
             // tmrCargado
@@ -84,8 +84,10 @@ namespace Proyecto_Final.Vista
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmInicio";
             this.Text = "ARKANOID";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

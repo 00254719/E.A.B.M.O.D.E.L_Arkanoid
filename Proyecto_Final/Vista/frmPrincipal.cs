@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using System.Drawing;
 using Proyecto_Final.Controlador;
+using Proyecto_Final.Modelo;
 
 namespace Proyecto_Final.Vista
 {
@@ -12,6 +13,7 @@ namespace Proyecto_Final.Vista
         private MainMenu mn = new MainMenu();
         private UserRegister rg = new UserRegister();
         private UserLevelOne lv;
+        private Player currentPlayer;
 
 
         public frmPrincipal()
@@ -64,6 +66,7 @@ namespace Proyecto_Final.Vista
         {
             DataGame.InicializateGame();
 
+            // seteo de propiedades para el UserLevelOne
             lv = new UserLevelOne();
             rg.Hide();
             lv.Dock = DockStyle.Fill;
@@ -71,23 +74,51 @@ namespace Proyecto_Final.Vista
             lv.Width = Width;
             Controls.Add(lv);
 
-            // Mensaje al terminar o perder el juego.
+            // Mensaje al perder el juego.
             lv.EndGame = () =>
             {
                 MessageBox.Show("Has perdido");
 
                 Controls.Remove(lv);
                 menu1.Show();
-
             };
 
             // Seteo de Delegate que maneja cuando se gana el juego
             lv.WinningGame = () =>
             {
+                int idPlayer = 0;
+                try
+                {
+                    //obtengo el id y luego realizo el insert del nuevo score
+                    idPlayer = Player_DAO.QueryIdplayer(currentPlayer.Nickname);
+                    Player_DAO.CreateNewScore(idPlayer, DataGame.score);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
                 MessageBox.Show("Has ganado!");
 
                 Controls.Remove(lv);
                 menu1.Show();
+            };
+
+            // seteo del delegate para registrar un nuevo jugador o acceder como uno existente
+            rg.Ur = (string nick) =>
+            {
+                if (Player_DAO.CreatePlayer(nick))
+                {
+                    MessageBox.Show($"Bienvenido nuevamenete {nick}");
+                }
+                else
+                {
+                    MessageBox.Show($"Gracias por registrarte {nick}");
+                }
+
+                currentPlayer = new Player(nick, 0);
+
+                //rg.Dispose();
             };
         }
 

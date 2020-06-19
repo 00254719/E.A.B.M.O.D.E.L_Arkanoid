@@ -26,8 +26,6 @@ namespace Proyecto_Final.Vista
         {
             InitializeComponent();
 
-            DoubleBuffered = true;
-
             MoveBall = RebounceBall;
             MoveBall += Start_Move_Ball;
         }
@@ -125,8 +123,6 @@ namespace Proyecto_Final.Vista
         // Seguimiento de la barra al movimiento del mouse
         private void UserLevelOne_MouseMove(object sender, MouseEventArgs e)
         {
-            DoubleBuffered = true;
-
             if (!DataGame.GameStart)
             {
                 if (e.X < (Width - picPlayerBar.Width))
