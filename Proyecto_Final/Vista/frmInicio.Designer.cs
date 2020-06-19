@@ -66,7 +66,7 @@ namespace Proyecto_Final.Vista
             this.pgbCarga.Margin = new System.Windows.Forms.Padding(2);
             this.pgbCarga.Name = "pgbCarga";
             this.pgbCarga.Size = new System.Drawing.Size(387, 18);
-            this.pgbCarga.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.pgbCarga.Style = System.Windows.Forms.ProgressBarStyle.Blocks;
             this.pgbCarga.TabIndex = 0;
             // 
             // tmrCargado

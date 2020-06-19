@@ -36,15 +36,14 @@
             // 
             // timer1
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 25;
+            this.timer1.Interval = 15;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // picPlayerBar
             // 
-            this.picPlayerBar.Location = new System.Drawing.Point(403, 546);
+            this.picPlayerBar.Location = new System.Drawing.Point(403, 556);
             this.picPlayerBar.Name = "picPlayerBar";
-            this.picPlayerBar.Size = new System.Drawing.Size(281, 37);
+            this.picPlayerBar.Size = new System.Drawing.Size(280, 30);
             this.picPlayerBar.TabIndex = 0;
             this.picPlayerBar.TabStop = false;
             // 
@@ -53,6 +52,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundImage = global::Proyecto_Final.Properties.Resources.LvlBG;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.picPlayerBar);
             this.Name = "UserLevelOne";

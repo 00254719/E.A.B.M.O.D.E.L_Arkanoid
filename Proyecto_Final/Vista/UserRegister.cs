@@ -1,8 +1,5 @@
-﻿using Proyecto_Final.Modelo;
-using System;
-using System.Drawing;
+﻿using System;
 using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
 
 namespace Proyecto_Final.Vista
 {
@@ -14,6 +11,9 @@ namespace Proyecto_Final.Vista
         public UserRegister()
         {
             InitializeComponent();
+            DoubleBuffered = true;
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Center;
+
             OptimizeTableLayoutPanel();
         }
         

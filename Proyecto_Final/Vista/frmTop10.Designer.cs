@@ -34,9 +34,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Proyecto_Final.Properties.Resources.frmTop10;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::Proyecto_Final.Properties.Resources.Fondo_Top10_este_si_xd;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(483, 628);
+            this.ClientSize = new System.Drawing.Size(476, 711);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;

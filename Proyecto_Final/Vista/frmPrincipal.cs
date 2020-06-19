@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Drawing;
+using Proyecto_Final.Controlador;
 
 namespace Proyecto_Final.Vista
 {
@@ -10,8 +11,9 @@ namespace Proyecto_Final.Vista
         private UserControl current;
         private MainMenu mn = new MainMenu();
         private UserRegister rg = new UserRegister();
-        private UserLevelOne lv = new UserLevelOne();
-        
+        private UserLevelOne lv;
+
+
         public frmPrincipal()
         {
             InitializeComponent();
@@ -55,26 +57,43 @@ namespace Proyecto_Final.Vista
             rg.btnBack_Click2 += new EventHandler(UserControl2_BtnBackMenu);
             rg.OnClickButtonPgame += ClickStartGame;
 
-            // Mensaje al terminar o perder el juego.
-            lv.EndGame = () =>
-            {
-                lv = null;
-                lv = new UserLevelOne();
-
-                MessageBox.Show("Has perdido");
-
-            };
         }
 
         // para mostrar el usercontrol del juego.
         private void ClickStartGame(object sender, EventArgs e)
         {
+            DataGame.InicializateGame();
+
+            lv = new UserLevelOne();
             rg.Hide();
             lv.Dock = DockStyle.Fill;
             lv.Height = Height;
             lv.Width = Width;
             Controls.Add(lv);
+
+            // Mensaje al terminar o perder el juego.
+            lv.EndGame = () =>
+            {
+                MessageBox.Show("Has perdido");
+
+                Controls.Remove(lv);
+                menu1.Show();
+
+            };
+
+            // Seteo de Delegate que maneja cuando se gana el juego
+            lv.WinningGame = () =>
+            {
+                MessageBox.Show("Has ganado!");
+
+                Controls.Remove(lv);
+                menu1.Show();
+            };
         }
 
+        private void frmPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

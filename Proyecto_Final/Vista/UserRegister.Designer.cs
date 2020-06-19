@@ -32,14 +32,12 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnPgame = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.RegisterTable.SuspendLayout();
             this.SuspendLayout();
             // 
             // RegisterTable
             // 
             this.RegisterTable.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.RegisterTable.BackgroundImage = global::Proyecto_Final.Properties.Resources.fondo;
             this.RegisterTable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.RegisterTable.ColumnCount = 7;
             this.RegisterTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3F));
@@ -52,7 +50,6 @@
             this.RegisterTable.Controls.Add(this.richTextBox1, 2, 3);
             this.RegisterTable.Controls.Add(this.btnBack, 1, 5);
             this.RegisterTable.Controls.Add(this.btnPgame, 4, 5);
-            this.RegisterTable.Controls.Add(this.label1, 3, 1);
             this.RegisterTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.RegisterTable.Location = new System.Drawing.Point(0, 0);
             this.RegisterTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -126,31 +123,18 @@
             this.btnPgame.UseVisualStyleBackColor = false;
             this.btnPgame.Click += new System.EventHandler(this.btnPgame_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Barcade Bold", 45.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(169)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(374, 217);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(486, 97);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "(NICKNAME)";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Register
+            // UserRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundImage = global::Proyecto_Final.Properties.Resources.NNBG;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.RegisterTable);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Register";
+            this.Name = "UserRegister";
             this.Size = new System.Drawing.Size(1235, 724);
             this.RegisterTable.ResumeLayout(false);
-            this.RegisterTable.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -161,6 +145,5 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnPgame;
-        private System.Windows.Forms.Label label1;
     }
 }

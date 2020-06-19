@@ -57,13 +57,6 @@ namespace Proyecto_Final.Controlador
             String cmd = String.Format("INSERT INTO public.player(nickname, score)" +
                   "	VALUES('{0}', 0); ", nick);
             ConnectionDB.ExecuteNonQuery(cmd);
-        }
-
-        //Guardar/Actualizar el puntaje de un jugador
-        public static void NewSCoreUpdate(int score, string nick)
-        {
-            String cmd = String.Format("UPDATE public.player SET " +
-                "score = {0} WHERE NICKNAME = '{1}';", score, nick);
-        }
+        }        
     }
 }

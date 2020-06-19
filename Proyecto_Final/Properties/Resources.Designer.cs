@@ -133,6 +133,36 @@ namespace Proyecto_Final.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fondo_Top10 {
+            get {
+                object obj = ResourceManager.GetObject("Fondo_Top10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fondo_Top10_este_si_xd {
+            get {
+                object obj = ResourceManager.GetObject("Fondo_Top10 este si xd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fondo_Top101 {
+            get {
+                object obj = ResourceManager.GetObject("Fondo_Top101", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap frmInicio {
             get {
                 object obj = ResourceManager.GetObject("frmInicio", resourceCulture);
@@ -153,19 +183,9 @@ namespace Proyecto_Final.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap frmTop10 {
+        internal static System.Drawing.Bitmap LvlBG {
             get {
-                object obj = ResourceManager.GetObject("frmTop10", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap kulka {
-            get {
-                object obj = ResourceManager.GetObject("kulka", resourceCulture);
+                object obj = ResourceManager.GetObject("LvlBG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,6 +196,16 @@ namespace Proyecto_Final.Properties {
         internal static System.Drawing.Bitmap Main_Menu__5_ {
             get {
                 object obj = ResourceManager.GetObject("Main Menu (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NNBG {
+            get {
+                object obj = ResourceManager.GetObject("NNBG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
