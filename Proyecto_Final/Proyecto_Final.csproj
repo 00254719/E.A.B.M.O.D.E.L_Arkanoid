@@ -188,25 +188,10 @@
     <None Include="Resources\btnExit.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\frmInicio.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\frmInicio%281%29.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\frmTop10.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Register.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\btnBack.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fondo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\kulka.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LvlBG.jpg" />
@@ -216,9 +201,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Fondo_Top10.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Fondo_Top10 este si xd.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -39,6 +39,7 @@ namespace Proyecto_Final.Vista
             {
                 frmPrincipal Inicio = new frmPrincipal();
                 tmrCargado.Enabled = false;
+                tmrCargado.Stop();
                 Inicio.Show();
                 this.Hide();
             }

@@ -41,7 +41,13 @@ namespace Proyecto_Final.Vista
         private void UserControl1_ButtonClick(object sender, EventArgs e)
         {
             menu1.Hide();
-            rg.Show();
+            rg = new UserRegister();
+            rg.Dock = DockStyle.Fill;
+            rg.Height = Height;
+            rg.Width = Width;
+            rg.OnClickButtonPgame += ClickStartGame;
+            rg.btnBack_Click2 += new EventHandler(UserControl2_BtnBackMenu);
+            Controls.Add(rg);
         }
 
         //metodo para volver al Usecontrol menu1.
@@ -119,7 +125,7 @@ namespace Proyecto_Final.Vista
 
                 currentPlayer = new Player(nick, 0);
 
-                //rg.Dispose();
+               rg.Dispose();
             };
         }
 
