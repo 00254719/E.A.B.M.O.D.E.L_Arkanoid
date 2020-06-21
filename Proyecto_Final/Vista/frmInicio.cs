@@ -5,8 +5,6 @@ namespace Proyecto_Final.Vista
 {
     public partial class frmInicio : Form
     {
-        private UserLevelOne Ulevel;
-
         public frmInicio()
         {
             InitializeComponent();
@@ -15,14 +13,6 @@ namespace Proyecto_Final.Vista
             Height = ClientSize.Height;
             Width = ClientSize.Width;
             WindowState = FormWindowState.Maximized;
-            Ulevel = new UserLevelOne();
-            Ulevel.Dock = DockStyle.Fill;
-            Ulevel.Width = Width;
-            Ulevel.Height = Height;
-
-            Controls.Add(Ulevel);
-
-            Ulevel.Show();
 
             this.tmrCargado.Start();
         }
@@ -39,9 +29,10 @@ namespace Proyecto_Final.Vista
             {
                 frmPrincipal Inicio = new frmPrincipal();
                 tmrCargado.Enabled = false;
-                tmrCargado.Stop();
                 Inicio.Show();
+                Controls.Remove(tableLayoutPanel1);
                 this.Hide();
+                tmrCargado.Stop();
             }
         }
 

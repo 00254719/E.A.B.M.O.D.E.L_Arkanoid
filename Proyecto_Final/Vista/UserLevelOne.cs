@@ -170,6 +170,9 @@ namespace Proyecto_Final.Vista
                 {
                     timer1.Stop();
                     FinishGame?.Invoke();
+
+                    Controls.Remove(this);
+                    this.Dispose();
                 }
             }
         }
@@ -217,6 +220,8 @@ namespace Proyecto_Final.Vista
                 {
                     timer1.Stop();
                     EndGame?.Invoke();
+                    this.Dispose();
+                    Controls.Remove(this);
                 }
             }
 
@@ -277,6 +282,8 @@ namespace Proyecto_Final.Vista
                         {
                             timer1.Stop();
                             WinningGame?.Invoke();
+                            this.Dispose();
+                            Controls.Remove(this);
                         }
 
 

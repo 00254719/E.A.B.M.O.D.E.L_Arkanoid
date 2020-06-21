@@ -7,9 +7,6 @@ namespace Proyecto_Final.Vista
 {
     public partial class frmPrincipal : Form
     {
-
-        private UserControl current;
-        private MainMenu mn = new MainMenu();
         private UserRegister rg = new UserRegister();
         private UserLevelOne lv;
         private Player currentPlayer;
@@ -21,7 +18,6 @@ namespace Proyecto_Final.Vista
             Height = ClientSize.Height;
             Width = ClientSize.Width;
             WindowState = FormWindowState.Maximized;
-            current = menu1;
 
             // cargar el usercontrol de Register
             rg.Dock = DockStyle.Fill;
@@ -45,8 +41,10 @@ namespace Proyecto_Final.Vista
             rg.Dock = DockStyle.Fill;
             rg.Height = Height;
             rg.Width = Width;
-            rg.OnClickButtonPgame += ClickStartGame;
+
             rg.btnBack_Click2 += new EventHandler(UserControl2_BtnBackMenu);
+            rg.OnClickButtonPgame += ClickStartGame;
+
             Controls.Add(rg);
         }
 
@@ -63,7 +61,6 @@ namespace Proyecto_Final.Vista
             menu1.btnPlay_Click1 += new EventHandler(UserControl1_ButtonClick);
             rg.btnBack_Click2 += new EventHandler(UserControl2_BtnBackMenu);
             rg.OnClickButtonPgame += ClickStartGame;
-
         }
 
         // para mostrar el usercontrol del juego.
@@ -83,7 +80,9 @@ namespace Proyecto_Final.Vista
             {
                 MessageBox.Show("Has perdido");
 
+                lv.Dispose();
                 Controls.Remove(lv);
+
                 menu1.Show();
             };
 
@@ -104,6 +103,7 @@ namespace Proyecto_Final.Vista
 
                 MessageBox.Show("Has ganado!");
 
+                lv.Dispose();
                 Controls.Remove(lv);
                 menu1.Show();
             };
@@ -125,7 +125,7 @@ namespace Proyecto_Final.Vista
 
                 currentPlayer = new Player(nick, 0);
 
-               rg.Dispose();
+                rg.Dispose();
             };
         }
 

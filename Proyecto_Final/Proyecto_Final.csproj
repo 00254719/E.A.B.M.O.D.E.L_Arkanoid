@@ -191,6 +191,9 @@
     <None Include="Resources\frmInicio%281%29.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Register.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\btnBack.png" />
   </ItemGroup>
   <ItemGroup>

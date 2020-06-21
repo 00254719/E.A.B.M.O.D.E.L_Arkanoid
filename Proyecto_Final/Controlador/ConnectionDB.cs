@@ -9,7 +9,7 @@ namespace Proyecto_Final.Controlador
         private static string host = "127.0.0.1",
             database = "ProyectoFinal_ArkanoidDB",
             userId = "postgres",
-            password = "167024839Naed.";
+            password = "uca";
 
         private static string sConnection =
             $"Host={host};Port=5432;User Id={userId};Password={password};Database={database};";
