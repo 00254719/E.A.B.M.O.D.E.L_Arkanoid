@@ -17,7 +17,7 @@ namespace Proyecto_Final.Vista
         public UserRegister()
         {
             InitializeComponent();
-            richTextBox1.SelectionAlignment = HorizontalAlignment.Center;
+            rtb.SelectionAlignment = HorizontalAlignment.Center;
 
             OptimizeTableLayoutPanel();
         }
@@ -42,15 +42,15 @@ namespace Proyecto_Final.Vista
             }
             try
             {
-                switch (richTextBox1.Text)
+                switch (rtb.Text)
                 {
                     case string aux when aux.Length > 15:
                         throw new ExceededMaxCharactersException("No se puede introducir un nick de mas de 15 caracteres");
                     case string aux when aux.Trim().Length == 0:
                         throw new EmptyNicknameException("No puede dejar campos vacios");
                     default:
-                        Ur?.Invoke(richTextBox1.Text);
-                        richTextBox1.Text = "";
+                        Ur?.Invoke(rtb.Text);
+                        rtb.Text = "";
                         break;
                 }
             }

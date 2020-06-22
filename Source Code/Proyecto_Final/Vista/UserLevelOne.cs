@@ -155,7 +155,7 @@ namespace Proyecto_Final.Vista
                 {
                     DataGame.lifes--;
                     DataGame.GameStart = false;
-                    timer1.Stop();
+                    tmrGame.Stop();
 
                     ReloadElements();
                     UpdateElements();
@@ -167,7 +167,7 @@ namespace Proyecto_Final.Vista
                 }
                 catch (NoRemainingLifesException ex2)
                 {
-                    timer1.Stop();
+                    tmrGame.Stop();
                     EndGame?.Invoke();
 
                     Controls.Remove(this);
@@ -187,7 +187,7 @@ namespace Proyecto_Final.Vista
                     {
                         case Keys.Space:
                             DataGame.GameStart = true;
-                            timer1.Start();
+                            tmrGame.Start();
                             break;
                         default:
                             throw new WrongKeyPressedException("Presione la tecla Space para iniciar el juego");
@@ -210,14 +210,14 @@ namespace Proyecto_Final.Vista
             {
                 DataGame.lifes--;
                 DataGame.GameStart = false;
-                timer1.Stop();
+                tmrGame.Stop();
 
                 ReloadElements();
                 UpdateElements();
 
                 if (DataGame.lifes == 0)
                 {
-                    timer1.Stop();
+                    tmrGame.Stop();
                     EndGame?.Invoke();
                     this.Dispose();
                     Controls.Remove(this);
@@ -279,7 +279,7 @@ namespace Proyecto_Final.Vista
 
                         if (remainingBlocks == 0)
                         {
-                            timer1.Stop();
+                            tmrGame.Stop();
                             WinningGame?.Invoke();
                             this.Dispose();
                             Controls.Remove(this);

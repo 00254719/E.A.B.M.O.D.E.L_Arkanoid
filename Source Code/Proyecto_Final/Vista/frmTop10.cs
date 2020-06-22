@@ -21,7 +21,7 @@ namespace Proyecto_Final.Vista
             var playersList = Player_DAO.QueryPlayerTop();
             players = new Label[10, 2];
 
-            int sampleTop = label1.Bottom + 25, sampleLeft = 35;
+            int sampleTop = lbl.Bottom + 25, sampleLeft = 35;
 
             for (int i = 0; i < 10; i++)
             {

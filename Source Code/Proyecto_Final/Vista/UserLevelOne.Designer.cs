@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.tmrGame = new System.Windows.Forms.Timer(this.components);
             this.picPlayerBar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayerBar)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
             // 
-            this.timer1.Interval = 15;
-            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            this.tmrGame.Interval = 15;
+            this.tmrGame.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // picPlayerBar
             // 
@@ -68,7 +68,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer tmrGame;
         private System.Windows.Forms.PictureBox picPlayerBar;
     }
 }

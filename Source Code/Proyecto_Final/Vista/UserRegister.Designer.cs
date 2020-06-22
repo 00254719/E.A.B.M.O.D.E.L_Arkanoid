@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.RegisterTable = new System.Windows.Forms.TableLayoutPanel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtb = new System.Windows.Forms.RichTextBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnPgame = new System.Windows.Forms.Button();
             this.RegisterTable.SuspendLayout();
@@ -47,7 +47,7 @@
             this.RegisterTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.RegisterTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
             this.RegisterTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3F));
-            this.RegisterTable.Controls.Add(this.richTextBox1, 2, 3);
+            this.RegisterTable.Controls.Add(this.rtb, 2, 3);
             this.RegisterTable.Controls.Add(this.btnBack, 1, 5);
             this.RegisterTable.Controls.Add(this.btnPgame, 4, 5);
             this.RegisterTable.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -67,19 +67,19 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.Black;
-            this.RegisterTable.SetColumnSpan(this.richTextBox1, 3);
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.ForeColor = System.Drawing.Color.White;
-            this.richTextBox1.Location = new System.Drawing.Point(188, 373);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.richTextBox1.MaxLength = 20;
-            this.richTextBox1.Multiline = false;
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(858, 106);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.Font = new System.Drawing.Font("Barcade No Bar Bold", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtb.BackColor = System.Drawing.Color.Black;
+            this.RegisterTable.SetColumnSpan(this.rtb, 3);
+            this.rtb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtb.ForeColor = System.Drawing.Color.White;
+            this.rtb.Location = new System.Drawing.Point(188, 373);
+            this.rtb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rtb.MaxLength = 20;
+            this.rtb.Multiline = false;
+            this.rtb.Name = "richTextBox1";
+            this.rtb.Size = new System.Drawing.Size(858, 106);
+            this.rtb.TabIndex = 1;
+            this.rtb.Text = "";
+            this.rtb.Font = new System.Drawing.Font("Barcade No Bar Bold", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
           
             // 
             // btnBack
@@ -143,7 +143,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel RegisterTable;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtb;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnPgame;
     }

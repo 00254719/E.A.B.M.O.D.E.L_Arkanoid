@@ -85,11 +85,8 @@ C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\bin\Debug\Sys
 C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.csprojAssemblyReference.cache
 C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Properties.Resources.resources
 C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.frmInicio.resources
-C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.frmLevel.resources
 C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.frmPrincipal.resources
 C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.frmTop10.resources
-C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.Menu.resources
-C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.Register.resources
 C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.GenerateResource.cache
 C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.CoreCompileInputs.cache
 C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.CopyComplete
@@ -308,3 +305,6 @@ C:\Users\arman\OneDrive\Escritorio\Proyecto_Final\bin\Debug\System.ValueTuple.xm
 C:\Users\arman\OneDrive\Escritorio\Proyecto_Final\obj\Debug\Proyecto_Final.Properties.Resources.resources
 C:\Users\arman\OneDrive\Escritorio\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.CoreCompileInputs.cache
 C:\Users\arman\OneDrive\Escritorio\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.CopyComplete
+C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.UserMenu.resources
+C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.UserRegister.resources
+C:\Users\gerso\Desktop\POO\E.A.B.M.O.D.E.L_Arkanoid\Proyecto_Final\obj\Debug\Proyecto_Final.Vista.UserLevelOne.resources

@@ -1,0 +1,48 @@
+CREATE TABLE PLAYER(
+idPlayer SERIAL PRIMARY KEY,
+	nickname VARCHAR(15) UNIQUE NOT NULL
+);
+
+CREATE TABLE SCORE(
+	idScore SERIAL PRIMARY KEY,
+	idPlayer INT NOT NULL,
+	score INT NOT NULL,
+	CONSTRAINT fk_player_score
+	FOREIGN KEY (idPlayer) REFERENCES PLAYER (idPlayer)
+);
+
+
+SELECT * FROM "Score"
+
+INSERT INTO PLAYER(nickname) VALUES 
+('Gerson'),
+('Nelson'),
+('Armando'),
+('Diana'),
+('Carmen'),
+('Rafa'),
+('Alex'),
+('Julio'),
+('Dennys'),
+('Oscar')
+
+
+INSERT INTO SCORE(idPlayer, score) VALUES 
+(1,300),
+(2,245),
+(3,232),
+(4,121),
+(5,111),
+(6,110),
+(7,12),
+(8,56),
+(9,157),
+(10,9)
+
+SELECT pl.nickname, sc.score 
+FROM PLAYER pl, SCORE sc 
+WHERE pl.idPlayer = sc.idPlayer
+ORDER BY sc.score DESC 
+LIMIT 10
+
+
