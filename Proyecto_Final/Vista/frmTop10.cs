@@ -7,10 +7,6 @@ namespace Proyecto_Final.Vista
 {
     public partial class frmTop10 : Form
     {
-        // Delegates para manejar Hide y Show
-        public delegate void OnClosedWindow();
-        public OnClosedWindow CloseAction;
-
         private Label[,] players;
 
         public frmTop10()
@@ -19,10 +15,6 @@ namespace Proyecto_Final.Vista
         }
 
         // Cambiar entre ventanas actuales a traves del delegate
-        private void frmTop10_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            CloseAction?.Invoke();
-        }
 
         private void LoadPlayers()
         {

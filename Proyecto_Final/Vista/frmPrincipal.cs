@@ -11,20 +11,12 @@ namespace Proyecto_Final.Vista
         private UserLevelOne lv;
         private Player currentPlayer;
 
-
         public frmPrincipal()
         {
             InitializeComponent();
             Height = ClientSize.Height;
             Width = ClientSize.Width;
             WindowState = FormWindowState.Maximized;
-
-            // cargar el usercontrol de Register
-            rg.Dock = DockStyle.Fill;
-            rg.Height = Height;
-            rg.Width = Width;
-            Controls.Add(rg);
-            rg.Hide();
 
             // Cargar el usercontrol de; Menu
             menu1.Dock = DockStyle.Fill;

@@ -20,8 +20,7 @@ namespace Proyecto_Final.Vista
 
         private delegate void ActionBall();
         private readonly ActionBall MoveBall;
-        public Action EndGame;
-        public Action FinishGame, WinningGame;
+        public Action EndGame, WinningGame;
 
         public UserLevelOne()
         {
@@ -169,7 +168,7 @@ namespace Proyecto_Final.Vista
                 catch (NoRemainingLifesException ex2)
                 {
                     timer1.Stop();
-                    FinishGame?.Invoke();
+                    EndGame?.Invoke();
 
                     Controls.Remove(this);
                     this.Dispose();

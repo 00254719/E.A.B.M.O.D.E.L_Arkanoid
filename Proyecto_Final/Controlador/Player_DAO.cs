@@ -32,6 +32,8 @@ namespace Proyecto_Final.Controlador
                 return false;
             }
         }
+
+        // Guardar el Score de un jugador
         public static void CreateNewScore(int idPlayer, int score)
         {
             ConnectionDB.ExecuteNonQuery("INSERT INTO SCORE(idPlayer, score) VALUES" +
